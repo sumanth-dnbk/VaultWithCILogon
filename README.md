@@ -1,20 +1,24 @@
 # VaultWithCILogon
+
 Configuring CILogon as an identity provider for users to authenticate themselves to Vault and get vault tokens.
 
-# step 1:
-Register to CILogon at https://cilogon.org/oauth2/register.
-Use Client Registration image as reference for vault server running in dev environment.(see callbacks)
+## Step 1:
+1. Register to CILogon at [https://cilogon.org/oauth2/register](https://cilogon.org/oauth2/register).
+2. Use the Client Registration image present in repo as a reference for the Vault server running in a development environment (see callbacks).
 
-# step 2: 
-Once registered, we get the client id and client secret which we put them in .env file in this repo
+## Step 2:
+Once registered, we get the client id and client secret, which we put into the `.env` file in this repository.
 
-# step 3:
-In a terminal run terminal1.sh 
+## Step 3:
+In a terminal, run `terminal1.sh`. This starts the vault server with debug logs.
 
-# step 4: 
-In other terminal run terminal2.sh. Now, you will be taken to CILogon login page, where you enter your institutional login credentials. Once you do that you will see the vault token in terminal. Now, you can use the vault token to access vault. 
+## Step 4:
+In another terminal, run `terminal2.sh`. You will be taken to the CILogon login page, where you enter your institutional login credentials. Once you do that, you will see the Vault token in the terminal(eg. hvs.332490328). Now, you can use the Vault token to access Vault.
 
-# step 5. 
-If you want to access through vault UI, go to http://localhost:8200/ui
-Select method as token and enter the vault token that you have received in the terminal output.
-Now, you can access the vault through its ui.
+## Step 5:
+If you want to access Vault through the Vault UI, follow these steps:
+1. Go to [http://localhost:8200/ui](http://localhost:8200/ui).
+2. Select the method as "token" and enter the Vault token that you received in the terminal output.
+3. Now, you can access Vault through its UI.
+
+**References:** [https://github.com/ncabatoff/vault-1.1-webinar/blob/master/README-oidc.md](https://github.com/ncabatoff/vault-1.1-webinar/blob/master/README-oidc.md)
