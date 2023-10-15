@@ -34,7 +34,7 @@ In other terminal run `python Device_Authorization.py` after providing host, cli
 ## Step 5:
 After putting the id token at line 34,nn another terminal, run `JWT_Login.sh`. Once you do that, you will see the Vault token in the terminal(eg. hvs.332490328). Now, you can use the Vault token to access Vault.
 
-## Step 5:
+## Step 6:
 If you want to access Vault through the Vault UI, follow these steps:
 1. Go to [http://localhost:8200/ui].
 2. Select the method as "token" and enter the Vault token that you received in the terminal output.
